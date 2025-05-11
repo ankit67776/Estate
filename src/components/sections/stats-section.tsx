@@ -1,35 +1,35 @@
 "use client";
 
-import { Award, Briefcase, CalendarDays, Users } from 'lucide-react';
+import { Briefcase, CalendarDays, Home, ClipboardList } from 'lucide-react'; // Updated icons
 
 const statsData = [
   {
     id: 1,
-    icon: Briefcase,
-    value: "150+",
-    label: "Projects Completed",
-    description: "Successfully delivered diverse construction and real estate projects.",
+    icon: Briefcase, // Or CheckCircle if preferred
+    value: "7",
+    label: "Completed Projects",
+    // description: "Successfully delivered diverse construction and real estate projects.", // Removed for cleaner look
   },
   {
     id: 2,
-    icon: CalendarDays,
-    value: "20+",
-    label: "Years of Experience",
-    description: "Two decades of industry expertise and commitment to excellence.",
+    icon: Home, // For Active Listing
+    value: "1",
+    label: "Active Listing",
+    // description: "Prime properties currently available in the market.", // Removed
   },
   {
     id: 3,
-    icon: Award, // Changed from Smile for a more professional feel
-    value: "98%",
-    label: "Client Satisfaction",
-    description: "Consistently high ratings from our valued clients.",
+    icon: ClipboardList, // For Project in Planning
+    value: "1",
+    label: "Project in Planning",
+    // description: "Exciting new developments on the horizon.", // Removed
   },
   {
     id: 4,
-    icon: Users,
-    value: "500+",
-    label: "Happy Clients", // Added a specific number for "Happy Clients"
-    description: "A growing family of satisfied homeowners and businesses.",
+    icon: CalendarDays,
+    value: "20+", // Kept 20+ as per previous, prompt was generic "Years of Experience"
+    label: "Years of Experience",
+    // description: "Two decades of industry expertise and commitment to excellence.", // Removed
   },
 ];
 
@@ -38,9 +38,10 @@ export default function StatsSection() {
     <section id="stats" className="section-padding bg-secondary">
       <div className="container-max">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-primary">Our Achievements</h2>
+          {/* Changed title to "Insights" or similar to reflect prompt */}
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-primary">Key Insights</h2> 
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            We pride ourselves on a legacy of trust, quality, and outstanding results.
+            Our performance and experience by the numbers, showcasing our dedication and success.
           </p>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -55,7 +56,7 @@ export default function StatsSection() {
               </div>
               <p className="text-4xl font-extrabold text-primary mb-2">{stat.value}</p>
               <h3 className="text-xl font-semibold text-foreground mb-1">{stat.label}</h3>
-              <p className="text-sm text-muted-foreground">{stat.description}</p>
+              {/* Descriptions removed from stat.description */}
             </div>
           ))}
         </div>

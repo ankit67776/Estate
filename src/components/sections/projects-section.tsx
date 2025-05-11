@@ -5,14 +5,14 @@ import ProjectCard from '@/components/project-card';
 import ProjectModal from '@/components/project-modal';
 import { placeholderProjects } from '@/lib/placeholder-data';
 import type { Project } from '@/types';
-import { Button } from '@/components/ui/button';
+// Removed Button as Load More is removed
 
-const PROJECTS_PER_PAGE = 6;
+// const PROJECTS_PER_PAGE = 6; // Removed
 
 export default function ProjectsSection() {
   const [selectedProject, setSelectedProject] = useState<Project | null>(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
-  const [visibleProjects, setVisibleProjects] = useState(PROJECTS_PER_PAGE);
+  // const [visibleProjects, setVisibleProjects] = useState(PROJECTS_PER_PAGE); // Removed
 
   const handleViewDetails = (project: Project) => {
     setSelectedProject(project);
@@ -24,9 +24,9 @@ export default function ProjectsSection() {
     setSelectedProject(null);
   };
   
-  const loadMoreProjects = () => {
-    setVisibleProjects(prev => prev + PROJECTS_PER_PAGE);
-  };
+  // const loadMoreProjects = () => { // Removed
+  //   setVisibleProjects(prev => prev + PROJECTS_PER_PAGE);
+  // };
 
   return (
     <section id="projects" className="section-padding bg-background">
@@ -42,7 +42,8 @@ export default function ProjectsSection() {
           <p className="text-center text-muted-foreground">No projects to display at the moment. Check back soon!</p>
         ) : (
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {placeholderProjects.slice(0, visibleProjects).map((project, index) => (
+            {/* Changed to map all projects directly */}
+            {placeholderProjects.map((project) => ( 
               <ProjectCard 
                 key={project.id} 
                 project={project} 
@@ -52,13 +53,7 @@ export default function ProjectsSection() {
           </div>
         )}
 
-        {visibleProjects < placeholderProjects.length && (
-          <div className="text-center mt-12">
-            <Button onClick={loadMoreProjects} size="lg">
-              Load More Projects
-            </Button>
-          </div>
-        )}
+        {/* Removed Load More Button */}
       </div>
       {selectedProject && (
         <ProjectModal

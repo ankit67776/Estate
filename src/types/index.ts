@@ -1,13 +1,18 @@
+export type ProjectStatus =
+  | 'SOLD'
+  | 'IN MARKET'
+  | 'UNDER CONSTRUCTION'
+  | 'SOLD (Under Construction)'
+  | 'PLAN REVIEW';
+
 export interface Project {
   id: string;
-  name: string;
-  description: string;
-  shortDescription?: string;
+  address: string; // Changed from name
+  status: ProjectStatus;
   thumbnailUrl: string;
-  images: string[];
-  location: string;
-  status: 'Ongoing' | 'Completed' | 'Upcoming';
-  category: string;
+  description?: string; // Optional, for modal
+  images?: string[]; // Optional, for modal
+  category?: string; // Optional, for modal, not on card
 }
 
 export interface Testimonial {
