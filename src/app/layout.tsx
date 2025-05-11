@@ -1,14 +1,14 @@
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import './globals.css';
-import { ThemeProvider } from '@/components/theme-provider';
 import Header from '@/components/layout/header';
 import Footer from '@/components/layout/footer';
 import { Toaster } from "@/components/ui/toaster";
 
 const inter = Inter({
   subsets: ['latin'],
-  variable: '--font-inter',
+  display: 'swap', // Added for font display strategy
+  variable: '--font-inter', // Keep if used elsewhere, otherwise can remove
 });
 
 export const metadata: Metadata = {
@@ -22,23 +22,16 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning>
-      <body className={`${inter.variable} font-sans antialiased`}>
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="system"
-          enableSystem
-          disableTransitionOnChange
-        >
-          <div className="flex flex-col min-h-screen">
-            <Header />
-            <main className="flex-grow">
-              {children}
-            </main>
-            <Footer />
-          </div>
-          <Toaster />
-        </ThemeProvider>
+    <html lang="en">
+      <body className={`${inter.className} font-sans antialiased`}> {/* Use inter.className directly */}
+        <div className="flex flex-col min-h-screen">
+          <Header />
+          <main className="flex-grow">
+            {children}
+          </main>
+          <Footer />
+        </div>
+        <Toaster />
       </body>
     </html>
   );

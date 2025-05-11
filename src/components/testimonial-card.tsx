@@ -16,19 +16,19 @@ export default function TestimonialCard({ testimonial }: TestimonialCardProps) {
     .toUpperCase();
 
   return (
-    <Card className="bg-card shadow-lg hover:shadow-xl transition-shadow duration-300 flex flex-col h-full animate-fadeIn">
-      <CardContent className="p-6 flex flex-col flex-grow">
-        <Quote className="w-8 h-8 text-primary mb-4 transform scale-x-[-1]" />
-        <p className="text-muted-foreground italic mb-6 flex-grow">"{testimonial.quote}"</p>
-        <div className="flex items-center mt-auto">
+    <Card className="bg-background shadow-xl flex flex-col h-full animate-fadeIn"> {/* Changed to bg-background for contrast with bg-secondary section */}
+      <CardContent className="p-6 md:p-8 flex flex-col flex-grow text-center">
+        <Quote className="w-10 h-10 text-primary mx-auto mb-6 transform scale-x-[-1]" />
+        <p className="text-lg text-foreground italic mb-8 flex-grow leading-relaxed">"{testimonial.quote}"</p>
+        <div className="flex flex-col items-center mt-auto">
           {testimonial.avatarUrl && (
-            <Avatar className="h-12 w-12 mr-4">
+            <Avatar className="h-16 w-16 mb-4">
               <AvatarImage src={testimonial.avatarUrl} alt={testimonial.author} data-ai-hint="person portrait" />
               <AvatarFallback>{fallbackInitials}</AvatarFallback>
             </Avatar>
           )}
           <div>
-            <p className="font-semibold text-foreground">{testimonial.author}</p>
+            <p className="font-semibold text-xl text-primary">{testimonial.author}</p>
             {testimonial.company && (
               <p className="text-sm text-muted-foreground">{testimonial.company}</p>
             )}

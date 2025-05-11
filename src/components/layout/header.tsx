@@ -1,7 +1,6 @@
 "use client";
 
 import Link from 'next/link';
-import { ThemeToggle } from '@/components/theme-toggle';
 import Logo from '@/components/logo';
 import { Button } from '@/components/ui/button';
 import { Menu } from 'lucide-react';
@@ -15,6 +14,9 @@ const NavLinks = ({ onItemClick }: { onItemClick?: () => void }) => (
     </Link>
     <Link href="/#projects" className="text-foreground hover:text-primary transition-colors" onClick={onItemClick}>
       Projects
+    </Link>
+    <Link href="/#stats" className="text-foreground hover:text-primary transition-colors" onClick={onItemClick}>
+      Our Stats
     </Link>
     <Link href="/#testimonials" className="text-foreground hover:text-primary transition-colors" onClick={onItemClick}>
       Testimonials
@@ -40,15 +42,14 @@ export default function Header() {
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ease-in-out 
-                  ${isScrolled ? 'bg-background/80 backdrop-blur-md shadow-md' : 'bg-transparent'}`}
+                  ${isScrolled ? 'bg-background/90 backdrop-blur-md shadow-md' : 'bg-transparent'}`}
     >
       <div className="container-max h-20 flex items-center justify-between">
         <Logo />
         <nav className="hidden md:flex items-center space-x-6">
           <NavLinks />
         </nav>
-        <div className="flex items-center space-x-2">
-          <ThemeToggle />
+        <div className="flex items-center">
           <div className="md:hidden">
             <Sheet open={mobileMenuOpen} onOpenChange={setMobileMenuOpen}>
               <SheetTrigger asChild>

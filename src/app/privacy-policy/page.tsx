@@ -1,9 +1,19 @@
+"use client";
+
+import { useState, useEffect } from 'react';
+
 export default function PrivacyPolicyPage() {
+  const [lastUpdatedDate, setLastUpdatedDate] = useState<string>('');
+
+  useEffect(() => {
+    setLastUpdatedDate(new Date().toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' }));
+  }, []);
+
   return (
     <div className="container-max section-padding pt-28 md:pt-32"> {/* Adjusted padding top for header */}
       <h1 className="text-3xl md:text-4xl font-bold mb-8 text-primary">Privacy Policy</h1>
-      <div className="prose dark:prose-invert max-w-none space-y-6 text-foreground">
-        <p>Last updated: {new Date().toLocaleDateString()}</p>
+      <div className="prose max-w-none space-y-6 text-foreground">
+        <p>Last updated: {lastUpdatedDate || "Loading..."}</p>
 
         <h2 className="text-2xl font-semibold">Introduction</h2>
         <p>

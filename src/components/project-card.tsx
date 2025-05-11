@@ -10,8 +10,14 @@ interface ProjectCardProps {
 }
 
 export default function ProjectCard({ project, onViewDetails }: ProjectCardProps) {
+  const getStatusColor = (status: Project['status']) => {
+    if (status === 'Completed') return 'text-green-600';
+    if (status === 'Ongoing') return 'text-blue-600';
+    return 'text-yellow-600'; // For 'Upcoming'
+  };
+
   return (
-    <Card className="overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 flex flex-col h-full group animate-fadeIn">
+    <Card className="overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 flex flex-col h-full group animate-fadeIn bg-card">
       <CardHeader className="p-0">
         <div className="relative w-full h-48 md:h-56">
           <Image
@@ -28,12 +34,12 @@ export default function ProjectCard({ project, onViewDetails }: ProjectCardProps
         <CardTitle className="text-xl font-semibold mb-2 group-hover:text-primary transition-colors">{project.name}</CardTitle>
         <p className="text-sm text-muted-foreground mb-3 line-clamp-3">{project.shortDescription || project.description}</p>
         <div className="flex items-center text-xs text-muted-foreground mb-1">
-          <MapPin size={14} className="mr-1.5 text-primary" />
+          <MapPin size={14} className="mr-1.5 text-primary shrink-0" />
           {project.location}
         </div>
         <div className="flex items-center text-xs text-muted-foreground">
-          <Tag size={14} className="mr-1.5 text-primary" />
-          {project.category} - <span className={`font-medium ${project.status === 'Completed' ? 'text-green-600 dark:text-green-400' : project.status === 'Ongoing' ? 'text-blue-600 dark:text-blue-400' : 'text-yellow-600 dark:text-yellow-400'}`}>{project.status}</span>
+          <Tag size={14} className="mr-1.5 text-primary shrink-0" />
+          {project.category} - <span className={`font-medium ${getStatusColor(project.status)}`}>{project.status}</span>
         </div>
       </CardContent>
       <CardFooter className="p-6 pt-0">
