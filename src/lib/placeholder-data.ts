@@ -1,3 +1,4 @@
+
 import type { Project, Testimonial, ProjectStatus } from '@/types';
 
 export const placeholderProjects: Project[] = [
@@ -116,4 +117,8 @@ export const heroCarouselImages = [
   { id: 'hero1', src: 'https://picsum.photos/seed/hero1/1920/1080', alt: 'Luxurious modern architecture', title: 'Building the Future', subtitle: 'Exquisite Properties, Expertly Crafted' , dataAiHint: 'modern architecture' },
   { id: 'hero2', src: 'https://picsum.photos/seed/hero2/1920/1080', alt: 'Spacious interior design', title: 'Innovative Design', subtitle: 'Where Vision Meets Precision', dataAiHint: 'modern interior' },
   { id: 'hero3', src: 'https://picsum.photos/seed/hero3/1920/1080', alt: 'Sustainable construction site', title: 'Sustainable Solutions', subtitle: 'Constructing a Greener Tomorrow', dataAiHint: 'construction site' },
+  { id: 'hero4', src: 'https://picsum.photos/seed/hero4/1920/1080', alt: 'Luxury home exterior', title: 'Dream Homes Delivered', subtitle: 'Quality Craftsmanship, Lasting Value', dataAiHint: 'luxury home' },
+  { id: 'hero5', src: 'https://picsum.photos/seed/hero5/1920/1080', alt: 'Modern building facade', title: 'Architectural Excellence', subtitle: 'Shaping Skylines, Inspiring Lives', dataAiHint: 'modern building' },
+  { id: 'hero6', src: 'https://picsum.photos/seed/hero6/1920/1080', alt: 'High-end residential construction', title: 'Premium Developments', subtitle: 'Your Vision, Our Expertise', dataAiHint: 'residential construction' },
 ];
+
