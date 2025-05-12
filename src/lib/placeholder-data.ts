@@ -114,11 +114,11 @@ export const placeholderTestimonials: Testimonial[] = [
 ];
 
 export const heroCarouselImages = [
-  { id: 'hero1', src: 'https://picsum.photos/seed/hero1/1920/1080', alt: 'Luxurious modern home exterior', title: 'Building the Future', subtitle: 'Exquisite Properties, Expertly Crafted' , dataAiHint: 'modern luxury home' },
-  { id: 'hero2', src: 'https://picsum.photos/seed/hero2/1920/1080', alt: 'Elegant modern house facade', title: 'Innovative Design', subtitle: 'Where Vision Meets Precision', dataAiHint: 'modern luxury home' },
-  { id: 'hero3', src: 'https://picsum.photos/seed/hero3/1920/1080', alt: 'Ongoing construction site with cranes', title: 'Sustainable Solutions', subtitle: 'Constructing a Greener Tomorrow', dataAiHint: 'construction site' },
-  { id: 'hero4', src: 'https://picsum.photos/seed/hero4/1920/1080', alt: 'Construction workers at a building site', title: 'Dream Homes Delivered', subtitle: 'Quality Craftsmanship, Lasting Value', dataAiHint: 'construction site' },
-  { id: 'hero5', src: 'https://picsum.photos/seed/hero5/1920/1080', alt: 'Team of builders and engineers at a project site', title: 'Architectural Excellence', subtitle: 'Shaping Skylines, Inspiring Lives', dataAiHint: 'builder team' },
-  { id: 'hero6', src: 'https://picsum.photos/seed/hero6/1920/1080', alt: 'Beautifully finished modern interior room', title: 'Premium Developments', subtitle: 'Your Vision, Our Expertise', dataAiHint: 'interior design' },
+  { id: 'hero1', src: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c', alt: 'Luxurious modern home exterior', title: 'Building the Future', subtitle: 'Exquisite Properties, Expertly Crafted' , dataAiHint: 'modern luxury home' },
+  { id: 'hero2', src: 'https://unsplash.com/photos/white-and-blue-swimming-pool-Id7u0EkTjBE', alt: 'Elegant modern house facade', title: 'Innovative Design', subtitle: 'Where Vision Meets Precision', dataAiHint: 'modern luxury home' },
+  { id: 'hero3', src: 'https://unsplash.com/photos/man-in-white-long-sleeve-shirt-and-blue-denim-jeans-standing-on-white-metal-ladder-sNVkn3507Oo', alt: 'Ongoing construction site with cranes', title: 'Sustainable Solutions', subtitle: 'Constructing a Greener Tomorrow', dataAiHint: 'construction site' },
+  { id: 'hero4', src: 'https://unsplash.com/photos/a-group-of-people-in-orange-vests-standing-in-a-warehouse-dfPwxpuj48M', alt: 'Construction workers at a building site', title: 'Dream Homes Delivered', subtitle: 'Quality Craftsmanship, Lasting Value', dataAiHint: 'construction site' },
+  { id: 'hero5', src: 'https://unsplash.com/photos/a-white-couch-sitting-in-a-living-room-next-to-a-window-F2FDhn7W4aA', alt: 'Team of builders and engineers at a project site', title: 'Architectural Excellence', subtitle: 'Shaping Skylines, Inspiring Lives', dataAiHint: 'builder team' },
+  { id: 'hero6', src: 'https://unsplash.com/photos/a-house-under-construction-with-a-man-on-top-of-it-dcUg77vnBeQ', alt: 'Beautifully finished modern interior room', title: 'Premium Developments', subtitle: 'Your Vision, Our Expertise', dataAiHint: 'interior design' },
 ];
 
