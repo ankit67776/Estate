@@ -12,11 +12,15 @@ export default function Logo({ isTransparent }: LogoProps) {
     <Link href="/" className="flex items-center space-x-2 group">
       <Building2 className={cn(
         "h-8 w-8 transition-colors duration-300",
-        isTransparent ? "text-white group-hover:text-gray-300" : "text-primary group-hover:text-accent"
+        isTransparent
+          ? "text-primary md:text-white group-hover:text-accent md:group-hover:text-gray-300" // Mobile: primary, Desktop: white
+          : "text-primary group-hover:text-accent" // Scrolled: primary
       )} />
       <span className={cn(
         "text-2xl font-bold transition-colors duration-300",
-        isTransparent ? "text-white group-hover:text-gray-300" : "text-foreground group-hover:text-accent"
+        isTransparent
+          ? "text-foreground md:text-white group-hover:text-accent md:group-hover:text-gray-300" // Mobile: foreground, Desktop: white
+          : "text-foreground group-hover:text-accent" // Scrolled: foreground
       )}>
         EstateView
       </span>

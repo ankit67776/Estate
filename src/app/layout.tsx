@@ -12,8 +12,8 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: 'EstateView - Premium Real Estate Showcase',
-  description: 'Discover exceptional properties and construction projects by EstateView.',
+  title: 'SquareGroup - Premium Real Estate Showcase',
+  description: 'Discover exceptional properties and construction projects by SquareGroup.',
 };
 
 export default function RootLayout({

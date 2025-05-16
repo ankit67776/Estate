@@ -73,6 +73,9 @@ export default function Header() {
       setIsScrolled(window.scrollY > 20);
     };
     window.addEventListener('scroll', handleScroll);
+
+    //set initial state
+    handleScroll();
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
@@ -95,7 +98,9 @@ export default function Header() {
             <Sheet open={mobileMenuOpen} onOpenChange={setMobileMenuOpen}>
               <SheetTrigger asChild>
                 <Button variant="ghost" size="icon" aria-label="Open menu">
-                  <Menu className={cn("h-6 w-6", isHeaderTransparent ? "text-white" : "text-foreground")} />
+                  {/* Use a different icon for the button based on the header transparency */}
+                  
+                  <Menu className={cn("h-6 w-6", "text-foreground")} />
                 </Button>
               </SheetTrigger>
               <SheetContent side="right" className="w-[280px] p-6 bg-background">

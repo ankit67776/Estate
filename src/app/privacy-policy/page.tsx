@@ -17,7 +17,7 @@ export default function PrivacyPolicyPage() {
 
         <h2 className="text-2xl font-semibold">Introduction</h2>
         <p>
-          Welcome to EstateView. We are committed to protecting your personal information and your right to privacy. 
+          Welcome to SquareGroup. We are committed to protecting your personal information and your right to privacy. 
           If you have any questions or concerns about this privacy notice, or our practices with regards to your 
           personal information, please contact us at privacy@estateview.com.
         </p>
@@ -97,10 +97,10 @@ export default function PrivacyPolicyPage() {
 
         <h2 className="text-2xl font-semibold">Contact Us</h2>
         <p>
-          If you have questions or comments about this notice, you may email us at privacy@estateview.com or by post to:
+          If you have questions or comments about this notice, you may email us at privacy@squaregruop.com or by post to:
         </p>
         <p>
-          EstateView<br />
+          SquareGroup<br />
           123 Construction Ave<br />
           Buildtown, BT 45678<br />
           United States

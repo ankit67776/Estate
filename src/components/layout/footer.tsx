@@ -33,12 +33,12 @@ export default function Footer() {
               <Link href="#" aria-label="Instagram" className="text-muted-foreground hover:text-primary transition-colors"><Instagram size={24} /></Link>
             </div>
             <p className="text-sm text-muted-foreground">123 Construction Ave, Buildtown, BT 45678</p>
-            <p className="text-sm text-muted-foreground">Email: info@estateview.com</p>
+            <p className="text-sm text-muted-foreground">Email: info@squaregroup.com</p>
             <p className="text-sm text-muted-foreground">Phone: (123) 456-7890</p>
           </div>
         </div>
         <div className="mt-8 border-t pt-8 text-center text-sm text-muted-foreground">
-          <p>&copy; {currentYear} EstateView. All rights reserved.</p>
+          <p>&copy; {currentYear} SquareGroup. All rights reserved.</p>
         </div>
       </div>
     </footer>
