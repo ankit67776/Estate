@@ -1,6 +1,3 @@
-# Firebase Studio
+This is the website for our Real Estate construction projects.
 
-This is a NextJS starter in Firebase Studio.
-
-To get started, take a look at src/app/page.tsx.
-# Estate
+P.S. : Site is still under construction.......
