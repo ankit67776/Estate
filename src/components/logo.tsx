@@ -22,7 +22,7 @@ export default function Logo({ isTransparent }: LogoProps) {
           ? "text-foreground md:text-white group-hover:text-accent md:group-hover:text-gray-300" // Mobile: foreground, Desktop: white
           : "text-foreground group-hover:text-accent" // Scrolled: foreground
       )}>
-        EstateView
+        SquareGroup
       </span>
     </Link>
   );
