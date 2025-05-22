@@ -15,13 +15,13 @@ export default function ContactSection() {
           <div className="space-y-8 animate-fadeIn" style={{animationDelay: '0.2s'}}>
             <h3 className="text-2xl font-semibold text-foreground mb-6">Contact Information</h3>
             <div className="flex items-start space-x-4">
-              <div className="flex-shrink-0 mt-1 p-3 bg-primary/10 rounded-full">
+              {/* <div className="flex-shrink-0 mt-1 p-3 bg-primary/10 rounded-full">
                 <MapPin className="h-6 w-6 text-primary" />
               </div>
               <div>
                 <h4 className="text-lg font-medium text-foreground">Our Office</h4>
                 <p className="text-muted-foreground">123 Construction Ave, Buildtown, BT 45678</p>
-              </div>
+              </div> */}
             </div>
             <div className="flex items-start space-x-4">
               <div className="flex-shrink-0 mt-1 p-3 bg-primary/10 rounded-full">
@@ -29,7 +29,7 @@ export default function ContactSection() {
               </div>
               <div>
                 <h4 className="text-lg font-medium text-foreground">Email Us</h4>
-                <p className="text-muted-foreground hover:text-primary transition-colors"><a href="mailto:info@estateview.com">info@estateview.com</a></p>
+                <p className="text-muted-foreground hover:text-primary transition-colors"><a href="mailto:info@estateview.com">squaregrouprealty@gmail.com</a></p>
               </div>
             </div>
             <div className="flex items-start space-x-4">
@@ -38,7 +38,8 @@ export default function ContactSection() {
               </div>
               <div>
                 <h4 className="text-lg font-medium text-foreground">Call Us</h4>
-                <p className="text-muted-foreground hover:text-primary transition-colors"><a href="tel:+1234567890">(123) 456-7890</a></p>
+                <p className="text-muted-foreground hover:text-primary transition-colors"><a href="tel:+1234567890">(973) 251-6420</a></p>
+                <p className="text-muted-foreground hover:text-primary transition-colors"><a href="tel:+1234567890">(973) 216-5487</a></p>
               </div>
             </div>
              <div className="mt-8 pt-8 border-t border-border">
