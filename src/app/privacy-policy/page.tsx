@@ -19,7 +19,7 @@ export default function PrivacyPolicyPage() {
         <p>
           Welcome to SquareGroup. We are committed to protecting your personal information and your right to privacy. 
           If you have any questions or concerns about this privacy notice, or our practices with regards to your 
-          personal information, please contact us at privacy@estateview.com.
+          personal information, please contact us at squaregrouprealty@gmail.com.
         </p>
 
         <h2 className="text-2xl font-semibold">Information We Collect</h2>
@@ -97,7 +97,7 @@ export default function PrivacyPolicyPage() {
 
         <h2 className="text-2xl font-semibold">Contact Us</h2>
         <p>
-          If you have questions or comments about this notice, you may email us at privacy@squaregruop.com or by post to:
+          If you have questions or comments about this notice, you may email us at squaregrouprealty@gmail.com or by post to:
         </p>
         <p>
           SquareGroup<br />
