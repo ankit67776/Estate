@@ -6,9 +6,10 @@ export const placeholderProjects: Project[] = [
     id: '1',
     address: '55 Hillside Ave',
     status: 'SOLD',
-    thumbnailUrl: '/images/projects/55 Hillside/1.jpg',
+    thumbnailUrl: '/images/projects/55 Hillside/main.png',
     description: 'Beautiful property at 55 Hillside Ave, now sold. This property featured modern designs and spacious living areas.',
     images: [
+      '/images/projects/55 Hillside/main.png',
       '/images/projects/55 Hillside/2.jpg',
       '/images/projects/55 Hillside/3.jpg',
       '/images/projects/55 Hillside/4.jpg',
@@ -153,9 +154,10 @@ export const placeholderProjects: Project[] = [
     id: '8',
     address: '11 Elmwood CT',
     status: 'PLAN REVIEW',
-    thumbnailUrl: '/images/projects/11 Elmwood CT/img-1.jpg',
+    thumbnailUrl: '/images/projects/11 Elmwood CT/main.jpeg',
     description: 'Upcoming project at 11 Elmwood CT, currently in plan review. We are excited about the innovative design and features planned for this property.',
     images: [
+      '/images/projects/11 Elmwood CT/main.jpeg',
       '/images/projects/11 Elmwood CT/img-1.jpg',
       '/images/projects/11 Elmwood CT/img-2.jpg',
       '/images/projects/11 Elmwood CT/img-3.jpg',
