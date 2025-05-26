@@ -21,9 +21,10 @@ export const placeholderProjects: Project[] = [
     id: '2',
     address: '280 W Mt Pleasant Ave',
     status: 'SOLD',
-    thumbnailUrl: '/images/projects/280 W Mt Pleasant Ave/1.jpg',
+    thumbnailUrl: '/images/projects/280 W Mt Pleasant Ave/main.png',
     description: 'Charming residence at 280 W Mt Pleasant Ave. Sold to a happy new owner, this home offers comfort and style.',
     images: [
+      '/images/projects/280 W Mt Pleasant Ave/main.png',
       '/images/projects/280 W Mt Pleasant Ave/2.jpg',
       '/images/projects/280 W Mt Pleasant Ave/3.jpg',
       '/images/projects/280 W Mt Pleasant Ave/4.jpg',
@@ -109,9 +110,10 @@ export const placeholderProjects: Project[] = [
     id: '5',
     address: '27 Mounthaven Dr',
     status: 'UNDER CONSTRUCTION',
-    thumbnailUrl: '/images/projects/27 Mounthaven Dr/img-1.jpg',
+    thumbnailUrl: '/images/projects/27 Mounthaven Dr/main.jpeg',
     description: 'Exciting new development at 27 Mounthaven Dr. Currently under construction, this future home will feature contemporary architecture and smart home technology.',
     images: [
+      '/images/projects/27 Mounthaven Dr/main.jpeg',
       '/images/projects/27 Mounthaven Dr/img-1.jpg',
       '/images/projects/27 Mounthaven Dr/img-2.jpg',
       '/images/projects/27 Mounthaven Dr/img-3.jpg',
@@ -122,9 +124,11 @@ export const placeholderProjects: Project[] = [
     id: '6',
     address: '54 Melrose Dr',
     status: 'SOLD (Under Construction)',
-    thumbnailUrl: '/images/projects/54 Melrose Dr/img-1.jpg',
+    thumbnailUrl: '/images/projects/54 Melrose Dr/main.jpeg',
+
     description: '54 Melrose Dr is sold and currently under construction. The new owners are eagerly awaiting their custom-built dream home.',
     images: [
+      '/images/projects/54 Melrose Dr/main.jpeg',
       '/images/projects/54 Melrose Dr/img-1.jpg',
       '/images/projects/54 Melrose Dr/img-2.jpg',
       '/images/projects/54 Melrose Dr/img-3.jpg',
@@ -135,9 +139,10 @@ export const placeholderProjects: Project[] = [
     id: '7',
     address: '73 W Cedar St',
     status: 'SOLD (Under Construction)',
-    thumbnailUrl: '/images/projects/73 W Cedar St/img-1.jpg',
+    thumbnailUrl: '/images/projects/73 W Cedar St/main.jpeg',
     description: 'Another successful sale at 73 W Cedar St, with construction underway. This property promises to be a stunning addition to the neighborhood.',
     images: [
+      '/images/projects/73 W Cedar St/main.jpeg',
       '/images/projects/73 W Cedar St/img-1.jpg',
       '/images/projects/73 W Cedar St/img-2.jpg',
       '/images/projects/73 W Cedar St/img-3.jpg',
