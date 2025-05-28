@@ -41,7 +41,7 @@ const NavLinks = ({ onItemClick, isTransparent }: { onItemClick?: () => void; is
     >
       Our Stats
     </Link>
-    <Link 
+    {/* <Link 
       href="/#testimonials" 
       className={cn(
         "transition-colors",
@@ -50,7 +50,7 @@ const NavLinks = ({ onItemClick, isTransparent }: { onItemClick?: () => void; is
       onClick={onItemClick}
     >
       Testimonials
-    </Link>
+    </Link> */}
     <Link 
       href="/#contact" 
       className={cn(
