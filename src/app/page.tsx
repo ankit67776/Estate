@@ -10,7 +10,7 @@ export default function HomePage() {
       <HeroSection />
       <StatsSection />
       <ProjectsSection />
-      {/* <TestimonialsSection /> */}
+      <TestimonialsSection />
       <ContactSection />
     </>
   );

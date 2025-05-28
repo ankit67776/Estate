@@ -169,25 +169,25 @@ export const placeholderProjects: Project[] = [
 export const placeholderTestimonials: Testimonial[] = [
   {
     id: '1',
-    quote: "EstateView transformed our vision into a reality. Their attention to detail and commitment to quality is outstanding. We couldn't be happier with our new headquarters.",
-    author: 'Sarah Chen',
-    company: 'CEO, Innovatech Solutions',
+    quote: "We purchased our home from Square Group Realty and we’ve been incredibly impressed with the quality of the house and the craftsmanship that went into building it. Every corner of the home was built with great care and attention to detail. From the layout to the finishes, everything feels thoughtfully designed and exceptionally well-built. It is evident that Square Group Realty takes pride in their work, and it shows in the comfort and functionality of the home. The team has also been very helpful and responsive in addressing any questions we’ve had since moving in, which has made the transition smooth and reassuring. We feel incredibly lucky to have found such a beautiful and well-constructed home. Thank you Square Group for turning our dream home into a reality.",
+    author: 'Ruchi and Vishal',
+    company: 'Homeowners',
     avatarUrl: 'https://picsum.photos/seed/avatar1/100/100',
   },
-  {
-    id: '2',
-    quote: 'Working with EstateView was a seamless experience. Their professionalism and expertise made the entire construction process smooth and efficient. Our dream home is perfect!',
-    author: 'John & Emily Carter',
-    company: 'Homeowners',
-    avatarUrl: 'https://picsum.photos/seed/avatar2/100/100',
-  },
-  {
-    id: '3',
-    quote: "The team at EstateView is exceptional. They delivered our project on time and within budget, exceeding all our expectations. Highly recommended for any large-scale development.",
-    author: 'David Lee',
-    company: 'Director, Urban Developers Inc.',
-    avatarUrl: 'https://picsum.photos/seed/avatar3/100/100',
-  },
+  // {
+  //   id: '2',
+  //   quote: 'Working with EstateView was a seamless experience. Their professionalism and expertise made the entire construction process smooth and efficient. Our dream home is perfect!',
+  //   author: 'John & Emily Carter',
+  //   company: 'Homeowners',
+  //   avatarUrl: 'https://picsum.photos/seed/avatar2/100/100',
+  // },
+  // {
+  //   id: '3',
+  //   quote: "The team at EstateView is exceptional. They delivered our project on time and within budget, exceeding all our expectations. Highly recommended for any large-scale development.",
+  //   author: 'David Lee',
+  //   company: 'Director, Urban Developers Inc.',
+  //   avatarUrl: 'https://picsum.photos/seed/avatar3/100/100',
+  // },
 ];
 
 export const heroCarouselImages = [
