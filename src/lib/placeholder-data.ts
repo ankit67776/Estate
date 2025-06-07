@@ -134,7 +134,7 @@ export const placeholderProjects: Project[] = [
   {
     id: '6',
     address: '54 Melrose Dr',
-    status: 'SOLD (Under Construction)',
+    status: 'Under Contract (Under Construction)',
     thumbnailUrl: '/images/projects/54 Melrose Dr/main.jpeg',
 
     description: '54 Melrose Dr is sold and currently under construction. The new owners are eagerly awaiting their custom-built dream home.',
