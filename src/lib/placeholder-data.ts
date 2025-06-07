@@ -149,7 +149,7 @@ export const placeholderProjects: Project[] = [
   {
     id: '7',
     address: '73 W Cedar St',
-    status: 'SOLD (Under Construction)',
+    status: 'Under Contract (Under Construction)',
     thumbnailUrl: '/images/projects/73 W Cedar St/main.jpeg',
     description: 'Another successful sale at 73 W Cedar St, with construction underway. This property promises to be a stunning addition to the neighborhood.',
     images: [
@@ -163,7 +163,7 @@ export const placeholderProjects: Project[] = [
   {
     id: '8',
     address: '11 Elmwood CT',
-    status: 'PLAN REVIEW',
+    status: 'Under Construction',
     thumbnailUrl: '/images/projects/11 Elmwood CT/main.jpeg',
     description: 'Upcoming project at 11 Elmwood CT, currently in plan review. We are excited about the innovative design and features planned for this property.',
     images: [
@@ -204,7 +204,7 @@ export const heroCarouselImages = [
   { id: 'hero1', src: '/images/projects/73 W Cedar St/main.jpeg', alt: 'Luxurious modern home exterior', title: 'Building the Future', subtitle: 'Exquisite Properties, Expertly Crafted' , dataAiHint: 'modern luxury home' },
   { id: 'hero2', src: '/images/projects/25 Sterling Drive/1.jpg', alt: 'Elegant modern house facade', title: 'Innovative Design', subtitle: 'Where Vision Meets Precision', dataAiHint: 'modern luxury home' },
   { id: 'hero3', src: '/images/projects/11 Country Club Road/2.jpg', alt: 'Ongoing construction site with cranes', title: 'Sustainable Solutions', subtitle: 'Constructing a Greener Tomorrow', dataAiHint: 'construction site' },
-  { id: 'hero4', src: '/images/carousel/4.jpg', alt: 'Construction workers at a building site', title: 'Dream Homes Delivered', subtitle: 'Quality Craftsmanship, Lasting Value', dataAiHint: 'construction site' },
+  //{ id: 'hero4', src: '/images/carousel/4.jpg', alt: 'Construction workers at a building site', title: 'Dream Homes Delivered', subtitle: 'Quality Craftsmanship, Lasting Value', dataAiHint: 'construction site' },
   { id: 'hero5', src: '/images/carousel/5.jpg', alt: 'Team of builders and engineers at a project site', title: 'Architectural Excellence', subtitle: 'Shaping Skylines, Inspiring Lives', dataAiHint: 'builder team' },
   { id: 'hero6', src: '/images/carousel/6.jpg', alt: 'Beautifully finished modern interior room', title: 'Premium Developments', subtitle: 'Your Vision, Our Expertise', dataAiHint: 'interior design' },
 ];
