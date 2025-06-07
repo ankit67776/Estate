@@ -31,7 +31,7 @@ const StatusDisplay: React.FC<{ status: ProjectStatus }> = ({ status }) => {
     case 'SOLD (Under Construction)':
       icon = <ShieldCheck size={16} className="mr-1.5" />; // Using ShieldCheck as a composite status indicator
       colorClass = 'text-teal-600 bg-teal-100';
-      text = 'SOLD (Constructing)'; // Shorter text for tag
+      text = 'Under Contract'; // Shorter text for tag
       break;
     case 'PLAN REVIEW':
       icon = <FileText size={16} className="mr-1.5" />;
