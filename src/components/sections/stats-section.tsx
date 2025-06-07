@@ -6,7 +6,7 @@ const statsData = [
   {
     id: 1,
     icon: Briefcase, // Or CheckCircle if preferred
-    value: "7",
+    value: "3",
     label: "Completed Projects",
     // description: "Successfully delivered diverse construction and real estate projects.", // Removed for cleaner look
   },
@@ -20,14 +20,14 @@ const statsData = [
   {
     id: 3,
     icon: ClipboardList, // For Project in Planning
-    value: "1",
-    label: "Project in Planning",
+    value: "4",
+    label: "Under Construction",
     // description: "Exciting new developments on the horizon.", // Removed
   },
   {
     id: 4,
     icon: CalendarDays,
-    value: "20+", // Kept 20+ as per previous, prompt was generic "Years of Experience"
+    value: "10+", // Kept 20+ as per previous, prompt was generic "Years of Experience"
     label: "Years of Experience",
     // description: "Two decades of industry expertise and commitment to excellence.", // Removed
   },
