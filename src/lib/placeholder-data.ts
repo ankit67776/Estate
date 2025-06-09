@@ -163,8 +163,8 @@ export const placeholderProjects: Project[] = [
   {
     id: '8',
     address: '11 Elmwood CT',
-    status: 'Under Construction',
-    thumbnailUrl: '/images/projects/11 Elmwood CT/main.jpeg',
+    status: 'UNDER CONSTRUCTION',
+    thumbnailUrl: '/images/projects/11 Elmwood CT/front.jpeg',
     description: 'Upcoming project at 11 Elmwood CT, currently in plan review. We are excited about the innovative design and features planned for this property.',
     images: [
       '/images/projects/11 Elmwood CT/front.jpeg',
