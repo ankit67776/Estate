@@ -120,7 +120,7 @@ export const placeholderProjects: Project[] = [
   {
     id: '5',
     address: '27 Mounthaven Dr',
-    status: 'UNDER CONSTRUCTION',
+    status: 'Under Contract (Under Construction)',
     thumbnailUrl: '/images/projects/27 Mounthaven Dr/main.jpeg',
     description: 'Exciting new development at 27 Mounthaven Dr. Currently under construction, this future home will feature contemporary architecture and smart home technology.',
     images: [
