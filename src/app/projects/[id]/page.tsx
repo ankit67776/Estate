@@ -7,7 +7,7 @@ import { Button } from '@/components/ui/button';
 import { ChevronLeft, Tag, CheckCircle, HardHat, FileText, ShieldCheck, Building } from 'lucide-react';
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
-import { cn } from '@/lib/utils';
+import { cn, slugify } from '@/lib/utils';
 
 
 const StatusDisplay: React.FC<{ status: Project['status'] }> = ({ status }) => {
@@ -51,17 +51,18 @@ const StatusDisplay: React.FC<{ status: Project['status'] }> = ({ status }) => {
 };
 
 interface ProjectPageParams {
-  id: string;
+  id: string; // This 'id' will now be the slugified address
 }
 
 export async function generateStaticParams() {
   return placeholderProjects.map((project) => ({
-    id: project.id,
+    id: slugify(project.address),
   }));
 }
 
 export default async function ProjectPage({ params }: { params: ProjectPageParams }) {
-  const project = placeholderProjects.find(p => p.id === params.id);
+  const { id: projectSlug } = params; 
+  const project = placeholderProjects.find(p => slugify(p.address) === projectSlug);
 
   if (!project) {
     notFound();

@@ -4,7 +4,7 @@ import type { Project, ProjectStatus } from '@/types';
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { CheckCircle, Tag, HardHat, FileText, ShieldCheck } from 'lucide-react';
-import { cn } from '@/lib/utils';
+import { cn, slugify } from '@/lib/utils';
 import Link from 'next/link';
 
 interface ProjectCardProps {
@@ -55,6 +55,7 @@ const StatusDisplay: React.FC<{ status: ProjectStatus }> = ({ status }) => {
 };
 
 export default function ProjectCard({ project }: ProjectCardProps) {
+  const projectSlug = slugify(project.address);
   return (
     <Card className="overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 flex flex-col h-full group animate-fadeIn bg-card">
       <CardHeader className="p-0">
@@ -75,7 +76,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
       </CardContent>
       <CardFooter className="p-6 pt-0 mt-auto">
         <Button variant="outline" className="w-full hover:bg-primary hover:text-primary-foreground" asChild>
-          <Link href={`/projects/${project.id}`}>
+          <Link href={`/projects/${projectSlug}`}>
             View Details
           </Link>
         </Button>
