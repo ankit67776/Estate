@@ -185,13 +185,13 @@ export const placeholderTestimonials: Testimonial[] = [
     company: 'Homeowners',
     avatarUrl: 'https://picsum.photos/seed/avatar1/100/100',
   },
-  // {
-  //   id: '2',
-  //   quote: 'Working with EstateView was a seamless experience. Their professionalism and expertise made the entire construction process smooth and efficient. Our dream home is perfect!',
-  //   author: 'John & Emily Carter',
-  //   company: 'Homeowners',
-  //   avatarUrl: 'https://picsum.photos/seed/avatar2/100/100',
-  // },
+  {
+    id: '2',
+    quote: 'Working closely with Square Group Realty has been nothing sort of exceptional. Their ability to find potential in properties, transform them and bring them back to market with value is truly impressive. If you are looking for a set of professionals who are honest, efficient and have a true passion for real estate, look no more. I have really enjoyed working with such a dependable and creative team.',
+    author: 'Rachel Kippel',
+    company: 'Allied Title, LLC',
+    avatarUrl: 'https://picsum.photos/seed/avatar2/100/100',
+  },
   // {
   //   id: '3',
   //   quote: "The team at EstateView is exceptional. They delivered our project on time and within budget, exceeding all our expectations. Highly recommended for any large-scale development.",
