@@ -7,8 +7,8 @@ import { Toaster } from "@/components/ui/toaster";
 
 const inter = Inter({
   subsets: ['latin'],
-  display: 'swap', // Added for font display strategy
-  variable: '--font-inter', // Keep if used elsewhere, otherwise can remove
+  display: 'swap',
+  variable: '--font-inter',
 });
 
 export const metadata: Metadata = {
@@ -23,7 +23,21 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.className} font-sans antialiased`}> {/* Use inter.className directly */}
+      <head>
+        {/* ✅ Google Analytics Tag */}
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-RSSLDD1776"></script>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-RSSLDD1776');
+            `,
+          }}
+        />
+      </head>
+      <body className={`${inter.className} font-sans antialiased`}>
         <div className="flex flex-col min-h-screen">
           <Header />
           <main className="flex-grow">
