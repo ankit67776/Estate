@@ -26,7 +26,7 @@ export default function ProjectModalCarousel({ images, projectName }: ProjectMod
   }
   
   return (
-    <div className="relative w-full aspect-[16/10] overflow-hidden group rounded-lg">
+    <div className="relative w-full aspect-[16/10] overflow-hidden group rounded-lg bg-secondary">
        {images.map((src, index) => (
         <div
           key={`${projectName}-image-${index}`}
@@ -38,7 +38,7 @@ export default function ProjectModalCarousel({ images, projectName }: ProjectMod
             src={src}
             alt={`${projectName} - Image ${index + 1}`}
             fill
-            className="object-cover"
+            className="object-contain"
             sizes="80vw"
             data-ai-hint="project image"
           />
@@ -50,7 +50,7 @@ export default function ProjectModalCarousel({ images, projectName }: ProjectMod
           <Button
             variant="ghost"
             size="icon"
-            className="absolute left-2 top-1/2 -translate-y-1/2 text-white bg-black/30 hover:bg-black/50 hover:text-white opacity-50 group-hover:opacity-100 transition-opacity duration-300"
+            className="absolute left-2 top-1/2 -translate-y-1/2 text-foreground bg-black/10 hover:bg-black/30 hover:text-white opacity-50 group-hover:opacity-100 transition-opacity duration-300"
             onClick={goToPrevious}
             aria-label="Previous image"
           >
@@ -59,7 +59,7 @@ export default function ProjectModalCarousel({ images, projectName }: ProjectMod
           <Button
             variant="ghost"
             size="icon"
-            className="absolute right-2 top-1/2 -translate-y-1/2 text-white bg-black/30 hover:bg-black/50 hover:text-white opacity-50 group-hover:opacity-100 transition-opacity duration-300"
+            className="absolute right-2 top-1/2 -translate-y-1/2 text-foreground bg-black/10 hover:bg-black/30 hover:text-white opacity-50 group-hover:opacity-100 transition-opacity duration-300"
             onClick={goToNext}
             aria-label="Next image"
           >
@@ -71,7 +71,7 @@ export default function ProjectModalCarousel({ images, projectName }: ProjectMod
               <button
                 key={`dot-${index}`}
                 className={`w-2.5 h-2.5 rounded-full transition-all duration-300 ${
-                  index === currentIndex ? 'bg-primary scale-125' : 'bg-white/60 hover:bg-white/90'
+                  index === currentIndex ? 'bg-primary scale-125' : 'bg-foreground/40 hover:bg-foreground/70'
                 }`}
                 onClick={() => setCurrentIndex(index)}
                 aria-label={`Go to image ${index + 1}`}

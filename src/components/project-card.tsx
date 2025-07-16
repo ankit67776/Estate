@@ -59,12 +59,12 @@ export default function ProjectCard({ project }: ProjectCardProps) {
   return (
     <Card className="overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 flex flex-col h-full group animate-fadeIn bg-card">
       <CardHeader className="p-0">
-        <div className="relative w-full h-48 md:h-56">
+        <div className="relative w-full h-48 md:h-56 bg-secondary">
           <Image
             src={project.thumbnailUrl}
             alt={project.address}
             fill
-            className="object-cover group-hover:scale-105 transition-transform duration-300"
+            className="object-contain group-hover:scale-105 transition-transform duration-300"
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
             data-ai-hint="house exterior"
           />
