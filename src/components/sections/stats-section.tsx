@@ -6,7 +6,7 @@ const statsData = [
   {
     id: 1,
     icon: Briefcase, // Or CheckCircle if preferred
-    value: "3",
+    value: "5",
     label: "Completed Projects",
     // description: "Successfully delivered diverse construction and real estate projects.", // Removed for cleaner look
   },
@@ -20,7 +20,7 @@ const statsData = [
   {
     id: 3,
     icon: ClipboardList, // For Project in Planning
-    value: "4",
+    value: "2",
     label: "Under Construction",
     // description: "Exciting new developments on the horizon.", // Removed
   },

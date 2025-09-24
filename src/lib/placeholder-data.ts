@@ -134,7 +134,7 @@ export const placeholderProjects: Project[] = [
   {
     id: '6',
     address: '54 Melrose Dr',
-    status: 'Under Contract (Under Construction)',
+    status: 'SOLD',
     thumbnailUrl: '/images/projects/54 Melrose Dr/main.jpeg',
 
     description: '54 Melrose Dr is sold and currently under construction. The new owners are eagerly awaiting their custom-built dream home.',
@@ -178,7 +178,7 @@ export const placeholderProjects: Project[] = [
   {
     id: '7',
     address: '73 W Cedar St',
-    status: 'Under Contract (Under Construction)',
+    status: 'SOLD',
     thumbnailUrl: '/images/projects/73 W Cedar St/main.jpeg',
     description: 'Another successful sale at 73 W Cedar St, with construction underway. This property promises to be a stunning addition to the neighborhood.',
     images: [
