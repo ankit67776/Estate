@@ -81,7 +81,7 @@ export const placeholderProjects: Project[] = [
   {
     id: '4',
     address: '11 Country Club Road',
-    status: 'IN MARKET',
+    status: 'Under Contract',
     thumbnailUrl: '/images/projects/11 Country Club Road/2.jpg',
     description: 'An exceptional opportunity at 11 Country Club Road. Currently in the market, this property is perfect for discerning buyers seeking luxury and exclusivity.',
     images: [
@@ -120,7 +120,7 @@ export const placeholderProjects: Project[] = [
   {
     id: '5',
     address: '27 Mounthaven Dr',
-    status: 'Under Contract (Under Construction)',
+    status: 'IN MARKET',
     thumbnailUrl: '/images/projects/27 Mounthaven Dr/main.jpeg',
     description: 'Exciting new development at 27 Mounthaven Dr. Currently under construction, this future home will feature contemporary architecture and smart home technology.',
     images: [
