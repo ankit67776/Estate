@@ -256,7 +256,7 @@ export const placeholderProjects: Project[] = [
   {
     id: '9',
     address: '75 W Cedar St',
-    status: 'UNDER CONSTRUCTION',
+    status: 'Coming Soon',
     thumbnailUrl: '/images/projects/75 W Cedar St/75 W Cedar St.jpeg',
     description: 'Upcoming project at 75 W Cedar St, currently in plan review. We are excited about the innovative design and features planned for this property.',
     images: [
