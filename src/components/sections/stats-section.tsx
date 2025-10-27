@@ -20,7 +20,7 @@ const statsData = [
   {
     id: 3,
     icon: ClipboardList, // For Project in Planning
-    value: "2",
+    value: "1",
     label: "Under Construction",
     // description: "Exciting new developments on the horizon.", // Removed
   },
